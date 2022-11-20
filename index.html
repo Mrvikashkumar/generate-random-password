@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Random password generator</title>
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/light-theme.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <span class="right-angle"></span>
+      <h2>Generate your secure password!</h2>
+      <div class="theme bg-display">
+        <label for="light-dark-mode" class="switch">
+          <input type="checkbox" title="Light/Dark Mode" id="light-dark-mode">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    <div class="password-box">
+      <input type="text" title="Your password" placeholder="Your password will show here..." readonly>
+      <div class="clear-btn">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+      <div class="copy-btn">
+        <i class="fa-solid fa-copy"></i>
+      </div>
+      <div class="copy-password-result"></div>
+    </div>
+    <div class="password-settings">
+      <div>
+        <label for="how-much-password">
+          <span>Password length : </span>
+          <input type="number" min="5" max="64" id="how-much-password">
+        </label>
+      </span></div>
+      <div class="password-setting">
+        <div class="password-length">
+          <span class="min-value">5</span>
+          <input type="range" min="5" max="64" value="10" title="password length">
+          <span class="max-value">64</span>
+        </div>
+        <div class="setting-btn" onclick="showMoreSetting()">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+      <div class="more-setting">
+        <h4>More setting</h4>
+        <div class="include-uppercase">
+          <label for="include-uppercase" class="switch">Include Uppercase
+            <input type="checkbox" title="capitalAlphabet" id="include-uppercase" class="password-type">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="include-lowercase">
+          <label for="include-lowercase" class="switch">Include Lowercase
+            <input type="checkbox" title="smallAlphabet" id="include-lowercase" class="password-type" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="include-numeric">
+          <label for="include-numeric" class="switch">Include Number
+            <input type="checkbox" title="numerical" id="include-numeric" class="password-type">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="include-special-character">
+          <label for="include-special-character" class="switch">Include Special Character
+            <input type="checkbox" title="specialCharacters" id="include-special-character" class="password-type">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="theme sm-display">
+          <label for="light-dark-mode2" class="switch">Light/Dark Mode
+            <input type="checkbox" title="Light/Dark Mode" id="light-dark-mode2">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="button">
+      <button id="generate-password" class="btn" title="Generate password button" type="button" onclick="generatePassword(characters)">Generate
+        password</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.light-theme{
+  background-color: var(--bg-color-light);
+  color: var(--color-dark);
+}
+.light-theme .right-angle::before,
+.light-theme .right-angle::after,
+.light-theme .password-length input,
+.light-theme .password-length input::-webkit-slider-thumb{
+  background-color: var(--bg-color-dark);
+}
+.light-theme .password-box, 
+.light-theme .password-settings div label input{
+  border-color: var(--bg-color-dark);
+}
+.light-theme .password-box{
+  background-color: rgba(255, 255, 255, 0.856);
+}
+.light-theme .password-box input, 
+.light-theme .password-settings div label span, 
+.light-theme .password-settings div label input{
+  color: var(--color-dark);
+}
+.light-theme .password-length,
+.light-theme .setting-btn,
+.light-theme .switch{
+  background-color: rgba(218, 218, 218, 0.74);
+}
+.light-theme .password-length:hover,
+.light-theme .switch:hover, 
+.light-theme .setting-btn:hover{
+  background-color: rgb(199, 199, 199);
+}
+.light-theme .bg-display .switch{
+  background-color: transparent;
+}
+.light-theme .slider{
+  background-color: rgb(128, 128, 128);
+}
+.light-theme .divider{
+  border: 1px solid rgb(128, 128, 128);
+}
+.light-theme .button .btn{
+  color: var(--color-dark);
+}
